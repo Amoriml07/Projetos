@@ -35,8 +35,9 @@ p{
       
 a{
     font-family:'Roboto Flex', sans-serif;
-    text-decoration: none;
-    color: black;  
+    text-decoration: underline;
+    color: black; 
+    font-weight: bold; 
  } 
    
 picture{
