@@ -31,6 +31,8 @@ h3{
 p{
     font-family:'Roboto Flex', sans-serif;
     color: black;
+    margin:  2px 2px 2px 2px;
+padding:  2px 2px 2px 2px;
 }
       
 a{
@@ -42,6 +44,7 @@ a{
    
 picture{
     text-align: center;
+    
        }   
 
 header{
