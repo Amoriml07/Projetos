@@ -61,8 +61,8 @@ nav{ padding: 20px;
     }   
   
 nav > a {
-    padding: 20px 10px;
-    margin: 0px;
+    padding: 10px 10px;
+    margin: auto;
     text-align: center;
      color: #26dc99;
         }
