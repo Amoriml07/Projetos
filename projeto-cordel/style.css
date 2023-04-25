@@ -1,5 +1,30 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap');
+
+@font-face {
+    font-family:'cordelina' ;
+    src: url(fontes/cordelina.otf) format(opentype);
+}
+@font-face {
+    font-family:pshico ;
+    src: url(fontes/PSYCHO.TTF) format(truetype)
+}
+@font-face {
+    font-family: pagap;
+    src: url(fontes/PAGAP___.TTF) format(truetype);
+}
+
+
+:root{
+    --texto1:  'Caveat', cursive;
+    --texto2: 'pshico',cursive;
+    --texto3: 'pagap', cursive;
+    --h1: 'cordelina', cursive
+    
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -14,6 +39,8 @@ header{
     text-align: center;
     height: 10em;
     position: relative;
+    font-family: var(--h1);4
+    font-size: 10vh;
 
     
 }
@@ -24,13 +51,14 @@ header > h1{
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    font-size: 10vh;
    
     text-transform: uppercase;
 }
 header > p{
     margin: 0;
     position: absolute;
-    top: 70%;
+    top: 75%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -50,6 +78,7 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 50px;
+    font-family:var(--texto2)
 }
 section.normal{
     background-color: white;
@@ -63,6 +92,7 @@ section.imagem{
 section.imagem > p{
     width: 400px;
     background-color: rgba(0, 0, 0, 0.673);
+    display: inline-block;
 }
 footer{
     background-color: black;
