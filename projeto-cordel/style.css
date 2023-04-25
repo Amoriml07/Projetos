@@ -38,6 +38,34 @@ header > p{
 }
 a{
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
+    text-decoration: none;
 
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 50px;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: red;
+    color: black;
+
+}
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.673);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
 }
