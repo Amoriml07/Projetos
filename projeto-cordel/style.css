@@ -92,6 +92,7 @@ section.imagem{
     background-color: red;
     color: white;
 
+    background-attachment: fixed;
 }
 section.imagem > p{
     width:250px;
