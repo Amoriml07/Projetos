@@ -90,13 +90,27 @@ section.normal > p{
 }
 section.imagem{
     background-color: red;
-    color: black;
+    color: white;
 
 }
 section.imagem > p{
     width:250px;
-    background-color: rgba(0, 0, 0, 0.673);
+    background-color: rgba(0, 0, 0, 0.350);
     display: inline-block;
+    padding: 8px;
+    text-shadow: 1px 1px 0px black
+    ;
+}
+section#img01{background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: center;
+    background-size: cover;
+
 }
 footer{
     background-color: black;
