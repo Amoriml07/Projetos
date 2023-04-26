@@ -83,6 +83,10 @@ section{
 section.normal{
     background-color: white;
     color: black;
+    
+}
+section.normal > p{
+    
 }
 section.imagem{
     background-color: red;
