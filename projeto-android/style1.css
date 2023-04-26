@@ -35,3 +35,51 @@ header > p {
     color: black;
     
 }
+nav{
+    padding: 20px;
+    min-width: 280px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #083040;
+    text-align: center;
+}
+nav > a {
+    font-family:'Roboto Flex', sans-serif;
+    text-decoration: underline;
+    color: black; 
+    font-weight: bold; 
+}
+button {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  button::before {
+    margin-left: auto;
+  }
+  
+  button::after, button::before {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: black;
+    display: block;
+    transition: 0.5s;
+  }
+  
+  button:hover::after, button:hover::before {
+    width: 100%;
+  }
+  button > a {
+    color: white;
+    text-decoration: none;
+    color: #26dc99;
+    font-family:'Roboto Flex', sans-serif;
+}
