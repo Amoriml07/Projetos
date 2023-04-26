@@ -63,7 +63,46 @@ nav{ padding: 20px;
     background-color: #083040;
     text-align: center;
     }   
-  
+  button {
+        background: #fff;
+        border: none;
+        padding: 10px 20px;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 600;
+        width: 120px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transform: skew(-21deg);
+      }
+      
+      span {
+        display: inline-block;
+        transform: skew(21deg);
+      }
+      
+      button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        left: 0;
+        background: rgb(20, 20, 20);
+        opacity: 0;
+        z-index: -1;
+        transition: all 0.5s;
+      }
+      
+      button:hover {
+        color: #010101;
+      }
+      
+      button:hover::before {
+        left: 0;
+        right: 0;
+        opacity: 1;
+      }
 nav > a {
     padding: 10px 5px;
     margin: 0px;
@@ -135,51 +174,5 @@ footer{
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
       }
-      .btn {
-        font-size: 17px;
-        background: transparent;
-        border: none;
-        padding: 1em 1.5em;
-        color: #ffedd3;
-        text-transform: uppercase;
-        position: relative;
-        transition: .5s ease;
-      }
       
-      .btn::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 2px;
-        width: 0;
-        background-color: #ffc506;
-        transition: .5s ease;
-      }
       
-      .btn:hover {
-        color: #1e1e2b;
-        transition-delay: .5s;
-      }
-      
-      .btn:hover::before {
-        width: 100%;
-      }
-      
-      .btn::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        height: 0;
-        width: 100%;
-        background-color: #ffc506;
-        transition: .4s ease;
-        z-index: -1;
-      }
-      
-      .btn:hover::after {
-        height: 100%;
-        transition-delay: 0.4s;
-        color: aliceblue;
-      }
