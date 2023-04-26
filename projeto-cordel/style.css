@@ -78,7 +78,9 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 50px;
-    font-family:var(--texto2)
+    font-family:var(--texto3);
+    font-size: 1.5em;
+
 }
 section.normal{
     background-color: white;
