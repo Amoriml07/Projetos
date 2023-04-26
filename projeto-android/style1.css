@@ -83,3 +83,52 @@ button {
     color: #26dc99;
     font-family:'Roboto Flex', sans-serif;
 }
+main{
+    padding: 20px;
+    min-width: 280px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #f2f2f2
+}
+main img {
+    width: 100%;
+}
+
+article > h1{ font-family: android,   cursive;
+    color: #083040;
+    padding: 5px;
+
+}
+article > h2{ font-family: android,   cursive;
+    color: #083040;
+    padding: 5px;
+
+}
+article > p{
+    text-indent: 27px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-family:'Roboto Flex', sans-serif;
+
+}
+article  a{
+    font-family:'Roboto Flex', sans-serif;
+    text-decoration: underline;
+    color: black; 
+    font-weight: bold; 
+}
+div.video{
+    background-color: #083040;
+    margin-bottom: 30px;
+    margin: 0px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 56.5%;
+}
+
+div.video > iframe
+   { position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height:90%;}
