@@ -133,3 +133,38 @@ div.video > iframe
     left: 5%;
     width: 90%;
     height:90%;}
+    aside{
+        background-color: #11593f5f;
+        padding: 0px;
+        margin: 0px;
+        border-radius: 8px;
+    }
+
+    aside > h3{
+    font-family: android, cursive;
+    padding: 5px;
+    }
+    aside > ul{
+        list-style-position: inside;
+    list-style-type: ' \2714\00A0\00A0\ ';
+    columns: 2;
+    padding: 7px;
+    }
+    aside > p{
+        font-family:'Roboto Flex', sans-serif;
+        text-indent: 27px;
+    padding-bottom: 2px;}
+    
+    footer{
+        background-color: black;
+        color: white;
+        text-align:center;
+        
+    }
+    footer > a{
+        font-family:'Roboto Flex', sans-serif;
+    text-decoration: underline;
+    color: white; 
+    font-weight: bold; 
+    }
+        
