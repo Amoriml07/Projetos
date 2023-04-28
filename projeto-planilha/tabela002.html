@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        width: 400px;
+        border-collapse: collapse;
+    }
+    td,th{
+        border: 1px solid black;
+        padding: 10px;
+        
+    }
+    thead, tfoot{
+        background-color: gray;
+    }
+</style>
+<body>
+    <h1>Criação de tabelas grandes</h1>
+    <!--
+        Anatomias para tabelas grandes
+        table
+            caption
+            thead
+                tr,td,th
+            tbody
+                tr,td,th
+            tfoot
+                tr,td,th
+    -->
+    <table>
+        <caption>População das unidades federativas brasileiras</caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>46 024 937</td>
+            </tr>
+            <td>Minas Gerais</td>
+            <td>20 732 660</td>
+            <tr>
+                <td>Rio de janeiro</td>
+            <td>16 615 526</td>
+        </tr>
+
+        </tbody>
+        <tfoot>
+            <th>Total de Habitantes</th>
+            <td>00000</td>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>
