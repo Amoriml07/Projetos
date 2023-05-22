@@ -42,12 +42,16 @@ section#Login > div#imagem{
     height: 200px;
     background-size: cover;
     background-position: center center;
+    float: none;
     
 }
 section#Login > div#formulario{
     display: block;
     padding: 10px;
-   
-
-
-}
+    float: none;
+    text-align: center;
+    margin-bottom: 10px;
+   }
+   div#formulario > a{
+    font-size: 1.2;
+   }
