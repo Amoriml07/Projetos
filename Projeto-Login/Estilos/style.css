@@ -29,10 +29,10 @@ section#Login{
     transform: translate(-50%, -50%);
     box-shadow: 0 0 5px #5f2c82;
     border: 1px solid black;
-    border-radius: 20px;
+    
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.471);
-    text-align: left;
+    
     transition: width 1s, height 1s;
     transition-timing-function: ease;
 }

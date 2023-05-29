@@ -5,18 +5,18 @@
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
     section#Login{
-        width: 90vw;
+        width: 100vw;
        
     }
     section#Login > div#imagem{
         float: left;
-        width: 30%;
+        width: 40%;
         height: 90vh;
     }
 }
 section#Login > div#formulario{
     float: right;
-    width: 70%;
+    width: 60%;
 }
 @media screen and (min-width:993px) {
     body{
