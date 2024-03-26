@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema da Prefeitura</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        button {
+            background-color: #4285f4;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #3b73ca;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4285f4;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Sistema da Prefeitura</h2>
+
+    <button onclick="adicionarDados()">Adicionar Dados</button>
+    <button onclick="removerDados()">Remover Dados</button>
+    <button onclick="exibirDados()">Exibir Dados</button>
+
+    <table id="dadosTable">
+        <thead>
+            <tr>
+                <th>Empresa</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Padrão</th>
+                <th>Motor</th>
+                <th>Câmbio</th>
+                <th>Ano</th>
+                <th>N° Veiculo</th>
+            </tr>
+        </thead>
+        <tbody id="dadosBody"></tbody>
+    </table>
+
+    <script>
+      
+
+        const dados = [];
+
+function adicionarDados() {
+    const empresa = prompt("Empresa:");
+    const marca = prompt("Marca:");
+    const modelo = prompt("Modelo:");
+    const padrao = prompt("Padrão:");
+    const motor = prompt("Motor:");
+    const cambio = prompt("Câmbio:");
+    const ano = prompt("Ano:");
+    const numVeiculo = prompt("N° Veiculo:");
+
+    const novoDado = {
+        Empresa: empresa,
+        Marca: marca,
+        Modelo: modelo,
+        Padrão: padrao,
+        Motor: motor,
+        Câmbio: cambio,
+        Ano: ano,
+        'N° Veiculo': numVeiculo
+    };
+
+    dados.push(novoDado);
+    alert("Dados adicionados com sucesso.");
+}
+
+function removerDados() {
+    const numVeiculo = prompt("Digite o N° Veiculo a ser removido:");
+
+    const index = dados.findIndex(dado => dado['N° Veiculo'] === numVeiculo);
+
+    if (index !== -1) {
+        dados.splice(index, 1);
+        alert("Dados removidos com sucesso.");
+    } else {
+        alert("N° Veiculo não encontrado.");
+    }
+}
+
+function exibirDados() {
+    const tableBody = document.getElementById('dadosBody');
+    tableBody.innerHTML = '';
+
+    if (dados.length === 0) {
+        alert("Nenhum dado cadastrado.");
+        return;
+    }
+
+    dados.forEach(dado => {
+        const row = tableBody.insertRow();
+        Object.values(dado).forEach(value => {
+            const cell = row.insertCell();
+            cell.textContent = value;
+        });
+    });
+}
+    </script>
+
+</body>
+</html>
